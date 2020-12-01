@@ -5,5 +5,5 @@
 
   - name: Pull an Ubuntu image
     community.general.docker_image:
-      name: ubuntu
+      name: pacur/centos-7
       source: pull

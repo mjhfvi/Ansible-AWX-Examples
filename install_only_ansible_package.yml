@@ -8,3 +8,6 @@
       name: ansible
       state: present
       update_cache: yes
+      
+  - name: install community.general docker plgin for ansible
+    shell: ansible-galaxy collection install community.general

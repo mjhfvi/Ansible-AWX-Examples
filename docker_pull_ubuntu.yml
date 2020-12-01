@@ -1,5 +1,4 @@
 ---
-- name: pull an Ubuntu Image For Docker
   hosts: all
   community.general.docker:
     name: ubuntu

@@ -3,13 +3,11 @@
   hosts: all
   tasks:
   
-  - name: Install all the packages
-    apt: name={{ item }} 
-    state: installed
-    update_cache: yes
-    with_items:
-       - software-properties-common
-       - ansible
-       - packer
-       - vault
-       - terraform
+- name: Install a list of packages
+  apt:
+    pkg:
+	- software-properties-common
+    - ansible
+    - packer
+    - vault
+    - terraform

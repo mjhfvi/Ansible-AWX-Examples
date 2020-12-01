@@ -1,6 +1,6 @@
 ---
 - name: pull an Ubuntu Image For Docker
   hosts: all
-  community.general.docker_image:
-    name: pacur/centos-7
+  community.general.docker:
+    name: ubuntu
     source: pull

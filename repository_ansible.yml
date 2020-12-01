@@ -1,8 +1,6 @@
 ---
 - name: PlayBook To Install Ansible Server on Ubuntu 
-  hosts: ansible_client
-  remote_user: tzahi
-  become: true
+  hosts: all
   tasks:
 
   - name: Installing software-properties-common Package

@@ -1,6 +1,7 @@
 ---
 - name: Add the user 'tzahi' to group of 'sudo'
   hosts: all
+  become: yes
   tasks:
 
   - name: Add user tzahi to sudo group

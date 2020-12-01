@@ -3,7 +3,12 @@
   hosts: all
   tasks:
 
-  - name: Add Hashicorp's official GPG key
+  - name: Add Docker official GPG apt Key
+    apt_key:
+      url: https://download.docker.com/linux/ubuntu/gpg
+      state: present
+      
+  - name: Add Hashicorp official GPG key
     apt_key:
       url: https://apt.releases.hashicorp.com/gpg
       state: present

@@ -3,11 +3,11 @@
   hosts: all
   tasks:
   
-- name: Install a list of packages
-  apt:
-    pkg:
-    - software-properties-common
-    - ansible
-    - packer
-    - vault
-    - terraform
+  - name: Install a list of packages
+    apt:
+      pkg:
+      - software-properties-common
+      - ansible
+      - packer
+      - vault
+      - terraform

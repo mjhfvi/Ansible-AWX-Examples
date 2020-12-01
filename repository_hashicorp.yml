@@ -1,7 +1,6 @@
 ---
 - name: Ansible Playbook Install Hashicorp Tools
   hosts: 
-  become: true
   tasks:
 
   - name: Add Hashicorp's official GPG key

@@ -1,6 +1,7 @@
 ---
 - name: Add the user 'tzahi' to group of 'sudo'
   hosts: all
+    tasks:
 
-  - name: Add user tzahi to sudo group
-     command: usermod -aG sudo tzahi
+    - name: Add user tzahi to sudo group
+      shell: usermod -aG sudo tzahi

@@ -2,12 +2,6 @@
 - name: Ansible Playbook Add Repository
   hosts: all
   tasks:
-
-  - name: Add ansible Repository into Sources List and apt-get update
-    apt_repository:
-      repo: 'ppa:ansible/ansible'
-      update_cache: no
-      state: present
       
   - name: Add Docker official GPG apt Key
     apt_key:

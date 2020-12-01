@@ -12,5 +12,5 @@
       dest: /etc/sudoers
       state: present
       regexp: '^%tzahi'
-      line: '%tzahi ALL=(ALL) NOPASSWD: ALL'
+      line: '%tzahi   ALL=(ALL:ALL) ALL'
       validate: visudo -cf %s

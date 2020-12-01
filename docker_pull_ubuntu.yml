@@ -3,7 +3,7 @@
   hosts: all
   tasks:
 
-- name: Pull an Ubuntu image
-  community.general.docker_image:
-    name: ubuntu
-    source: pull
+  - name: Pull an Ubuntu image
+    community.general.docker_image:
+      name: ubuntu
+      source: pull

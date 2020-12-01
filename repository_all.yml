@@ -15,7 +15,7 @@
       state: present
       update_cache: yes
       
-  - name: Add Ansible stable repository from PPA and install its signing key on Ubuntu target
+  - name: Add Ansible Repository from PPA and signing key
     apt_repository:
       repo: ppa:ansible/ansible
       state: present

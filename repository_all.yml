@@ -6,6 +6,7 @@
   - name: Add ansible Repository into Sources List and apt-get update
     apt_repository:
       repo: 'ppa:ansible/ansible'
+      validate_certs: no
       update_cache: yes
       state: present
       

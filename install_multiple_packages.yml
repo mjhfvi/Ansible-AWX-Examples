@@ -8,4 +8,4 @@
       pkg:
       - software-properties-common
       - python
-      - python-pip
+      - python3-pip

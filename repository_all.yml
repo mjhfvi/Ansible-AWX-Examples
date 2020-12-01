@@ -22,9 +22,3 @@
     apt_repository:
       repo: deb https://apt.releases.hashicorp.com focal main
       state: present
-    
-  - name: Installing software-properties-common Package
-    apt:
-      name: software-properties-common
-      state: present
-      update_cache: yes

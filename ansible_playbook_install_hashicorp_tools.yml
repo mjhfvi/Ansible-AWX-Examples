@@ -1,22 +1,25 @@
 ---
-- name: PlayBook To Install Ansible Server on Ubuntu 
+- name: Ansible Playbook Install Hashicorp Tools
   hosts: ansible_client
   remote_user: tzahi
   become: true
   tasks:
 
-  - name: Installing software-properties-common Package
-    apt:
-      name: software-properties-common
-      state: present
-      update_cache: yes
-        
-  - name: Add Ansible stable repository from PPA and install its signing key on Ubuntu target
+  - name: Add Hashicorp's official GPG key
+    shell: curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+
+
+  - name: Add Specified Repository into Sources List and Run apt-get update
     apt_repository:
-      repo: ppa:ansible/ansible
-      
-  - name: Installing Ansible Package
-    apt:
-      name: ansible
+      repo:  "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
       state: present
       update_cache: yes
+      
+    - name: Install all the packages
+    apt: name={{ item }} 
+    state: installed
+    update_cache: yes
+    with_items:
+       - vault
+       - terraform
+       - packer

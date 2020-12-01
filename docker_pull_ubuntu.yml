@@ -1,6 +1,5 @@
 ---
-- name: Pull an image
+- name: pull an image
   hosts: all
-  community.general.docker_image:
-    name: pacur/centos-7
-    source: pull
+  docker_image:
+    name: ubuntu

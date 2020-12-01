@@ -1,4 +1,5 @@
 ---
+collections:
 - name: pull an Ubuntu Image For Docker
   community.general.docker:
     name: ubuntu

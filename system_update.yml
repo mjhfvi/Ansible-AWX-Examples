@@ -1,5 +1,5 @@
 ---
-- name: Playbook for System Update packages
+- name: Playbook for System Update Packages
   hosts: all
   become: true
   tasks:
@@ -8,11 +8,11 @@
     apt:
       name: "*"
       state: latest
-	
+
   - name: Upgrade the OS (apt-get dist-upgrade)
     apt:
       upgrade: dist
-	
+
   - name: Remove useless packages from the cache
     apt:
       autoclean: yes

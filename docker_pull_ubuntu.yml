@@ -1,0 +1,9 @@
+---
+- name: PlayBook To Pull a Docker Image
+  hosts: all
+  tasks:
+
+- name: Pull an Ubuntu image
+  community.general.docker_image:
+    name: ubuntu
+    source: pull

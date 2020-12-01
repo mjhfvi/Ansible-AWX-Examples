@@ -3,7 +3,7 @@
   hosts: all
   tasks:
 
-  - name: Pull an Ubuntu image
+  - name: Pull an image
     community.general.docker_image:
       name: pacur/centos-7
       source: pull

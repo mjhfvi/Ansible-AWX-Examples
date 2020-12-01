@@ -1,7 +1,6 @@
 ---
 - name: Playbook for Install Multiple the packages
   hosts: all
-  become: true
   tasks:
   
   - name: Install a list of packages

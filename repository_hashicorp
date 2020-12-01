@@ -13,3 +13,10 @@
       repo:  "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
       state: present
       update_cache: yes
+      
+  - name: Install all the packages
+    apt: name={{ item }} 
+    state: installed
+    update_cache: yes
+    with_items:
+       - packer

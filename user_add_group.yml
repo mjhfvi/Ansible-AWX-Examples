@@ -1,11 +1,9 @@
 ---
 - name: Add the user 'tzahi' to group of 'sudo'
   hosts: all
-  remote_user: root
-
   user:
-    name: tzahi
-    group: sudo
-    state: present
-    become: yes
-    become_method: "sudo"
+    name=tzahi
+    groups=sudo
+    append=yes
+    state=present
+    createhome=yes

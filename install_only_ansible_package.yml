@@ -1,5 +1,5 @@
 ---
-- name: PlayBook To Install Ansible Server on Ubuntu 
+- name: PlayBook To Install Ansible
   hosts: all
   tasks:
 

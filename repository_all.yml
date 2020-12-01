@@ -13,11 +13,7 @@
     apt_repository:
       repo: deb https://apt.releases.hashicorp.com focal main
       state: present
-      
-  - name: Add Ansible Repository from PPA and signing key
-    apt_repository:
-      repo: 'ppa:ansible/ansible'
-      
+           
   - name: Installing software-properties-common Package
     apt:
       name: software-properties-common

@@ -5,4 +5,4 @@
 
   - name: Reboot Command
     reboot:
-      reboot_timeout: 10
+      reboot_timeout: 3600

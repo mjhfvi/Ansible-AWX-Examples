@@ -6,8 +6,7 @@
   - name: Add ansible Repository into Sources List and apt-get update
     apt_repository:
       repo: 'ppa:ansible/ansible'
-      validate_certs: no
-      update_cache: yes
+      update_cache: no
       state: present
       
   - name: Add Docker official GPG apt Key

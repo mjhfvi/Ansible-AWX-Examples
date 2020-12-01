@@ -1,5 +1,6 @@
 ---
 - name: Ansible Playbook Install Vault
+  hosts: ansible_client
   remote_user: tzahi
   become: true
   tasks:

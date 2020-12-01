@@ -3,7 +3,7 @@
   hosts: all
   tasks:
 
-  - name: Add Hashicorp's official GPG key
+  - name: Add Hashicorp's official GPG key (test new)
     apt_key:
       url: https://apt.releases.hashicorp.com/gpg
       state: present

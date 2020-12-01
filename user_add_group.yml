@@ -1,5 +1,6 @@
 ---
 - name: Add the user 'tzahi' to group of 'sudo'
+  hosts: all
   user:
     name: tzahi
     group: sudo

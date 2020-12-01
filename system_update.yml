@@ -1,7 +1,6 @@
 ---
 - name: Playbook for System Update Packages
   hosts: all
-  become: true
   tasks:
 
   - name: Update all packages to their latest version

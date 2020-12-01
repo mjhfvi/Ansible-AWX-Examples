@@ -11,7 +11,7 @@
         
   - name: Add Repository into Sources List and Run apt-get update
     apt_repository:
-      repo:  "deb https://apt.releases.hashicorp.com focal main"
+      repo: deb https://apt.releases.hashicorp.com focal main
       state: present
       update_cache: yes
       

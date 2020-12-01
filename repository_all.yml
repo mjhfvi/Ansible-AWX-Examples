@@ -3,6 +3,12 @@
   hosts: all
   tasks:
 
+  - name: Add ansible Repository into Sources List and apt-get update
+    apt_repository:
+      repo: 'ppa:ansible/ansible'
+      update_cache: yes
+      state: present
+      
   - name: Add Docker official GPG apt Key
     apt_key:
       url: https://download.docker.com/linux/ubuntu/gpg
@@ -22,10 +28,6 @@
     apt_repository:
       repo: deb https://apt.releases.hashicorp.com focal main
       state: present
-      
-  - name: Add ansible Repository into Sources List and apt-get update
-    apt_repository:
-      repo: 'ppa:ansible/ansible'
     
   - name: Installing software-properties-common Package
     apt:

@@ -1,8 +1,6 @@
 ---
-- name: PlayBook To Pull a Docker Image
+- name: Pull an image
   hosts: all
-  tasks:
-
-  - name: Pull an image
-      name: pacur/centos-7
-      source: pull
+  community.general.docker_image:
+    name: pacur/centos-7
+    source: pull

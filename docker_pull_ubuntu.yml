@@ -1,6 +1,7 @@
 ---
-collections:
-- name: pull an Ubuntu Image For Docker
-  community.general.docker:
-    name: ubuntu
-    source: pull
+- name: Playbook for System Update Packages
+  hosts: all
+  tasks:
+
+  - name: pull an Ubuntu Image For Docker
+    shell: docker pull ubuntu

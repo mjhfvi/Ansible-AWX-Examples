@@ -1,4 +1,3 @@
-
 ---
 - name: Ansible Playbook Install Packer
   hosts: 

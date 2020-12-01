@@ -1,6 +1,6 @@
 ---
 - name: Ansible Playbook Install Vault
-  hosts:
+  hosts: all
   tasks:
 
   - name: Installing Vault Package

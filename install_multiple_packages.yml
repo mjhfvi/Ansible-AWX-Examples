@@ -7,7 +7,5 @@
     apt:
       pkg:
       - software-properties-common
-      - ansible
-      - packer
-      - vault
-      - terraform
+      - python
+      - python-pip

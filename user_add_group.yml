@@ -1,3 +1,4 @@
+---
 - name: Add the user 'tzahi' to group of 'sudo'
   user:
     name: tzahi

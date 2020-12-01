@@ -13,13 +13,11 @@
     apt_repository:
       repo: deb https://apt.releases.hashicorp.com focal main
       state: present
-      update_cache: yes
       
   - name: Add Ansible Repository from PPA and signing key
     apt_repository:
       repo: ppa:ansible/ansible
       state: present
-      update_cache: yes
       
   - name: Installing software-properties-common Package
     apt:

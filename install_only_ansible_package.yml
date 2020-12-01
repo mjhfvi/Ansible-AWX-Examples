@@ -1,0 +1,10 @@
+---
+- name: PlayBook To Install Ansible Server on Ubuntu 
+  hosts:
+  tasks:
+
+  - name: Installing Ansible Package
+    apt:
+      name: ansible
+      state: present
+      update_cache: yes

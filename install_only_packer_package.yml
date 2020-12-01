@@ -1,0 +1,11 @@
+
+---
+- name: Ansible Playbook Install Packer
+  hosts: 
+  tasks:
+
+  - name: Installing Packer Package
+    apt:
+      name: packer
+      state: present
+      update_cache: yes

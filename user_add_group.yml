@@ -1,7 +1,4 @@
 ---
-ansible_ssh_user: tzahi
-ansible_ssh_pass: 1a2b3c4d
-ansible_become_pass: 1a2b3c4d
 - name: Add the user 'tzahi' to group of 'sudo'
   hosts: all
   user:

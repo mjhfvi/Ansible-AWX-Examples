@@ -1,6 +1,6 @@
 ---
 - name: Ansible Playbook Install Terraform
-  hosts:
+  hosts: all
   tasks:
    
   - name: Installing Terraform Package

@@ -1,6 +1,6 @@
 ---
 - name: Ansible Playbook Install Packer
-  hosts: 
+  hosts: all
   tasks:
 
   - name: Installing Packer Package

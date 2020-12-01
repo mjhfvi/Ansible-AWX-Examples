@@ -1,6 +1,7 @@
 ---
 - name: Ansible Playbook Add Repository
   hosts: all
+  become: true
   tasks:
 
   - name: Add Hashicorp's official GPG key (test new)

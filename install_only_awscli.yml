@@ -4,4 +4,4 @@
   tasks:
 
   pip:
-    name: "awscli"
+    name: awscli

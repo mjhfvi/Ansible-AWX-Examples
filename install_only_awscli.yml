@@ -1,5 +1,7 @@
 ---
 - name: Install AWS command line interface
-  sudo: yes
+  hosts: all
+  tasks:
+
   pip:
     name: "awscli"

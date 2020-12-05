@@ -1,19 +1,19 @@
 ---
-- name: make direcotry
+- name: Adding Public SSH Certificate For User
   hosts: all
   tasks:
-  
-  - name: make direcotry
+
+  - name: Make .ssh Direcotry
     file:
       path: "/home/tzahi/.ssh"
       state: directory
 
-  - name: create empty file
+  - name: Create Empty authorized_keys File
     file:
       path: "/home/tzahi/.ssh/authorized_keys"
       state: touch
 
-  - name: Copy file with owner and permissions
+  - name: Copy Certificate File From Local Server with owner and permissions
     copy:
       src: /home/tzahi/awx/id_ed25519.pub
       dest: /home/tzahi/.ssh/

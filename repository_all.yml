@@ -1,5 +1,5 @@
 ---
-- name: Ansible Playbook Add Repository
+- name: Ansible Playbook Add Repository Docker/Hashicorp
   hosts: all
   tasks:
       

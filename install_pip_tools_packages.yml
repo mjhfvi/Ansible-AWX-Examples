@@ -3,8 +3,8 @@
   hosts: all
   tasks:
 
-
   - name: Install Docker Module for Python
+    executable: pip3.3
     pip:
       name: 
       - awscli

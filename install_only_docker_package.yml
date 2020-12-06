@@ -13,6 +13,7 @@
       - docker.io
       - python3-pip
       - python-setuptools
+      - python-pip
 
   - name: Install Docker Module for Python
     pip:

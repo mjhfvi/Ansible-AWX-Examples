@@ -8,6 +8,6 @@ source: https://github.com/ansible/awx
 
 
 
-# setup Templates
-
+# Setup Templates
+images/2020-12-06_11-19-00.png
 

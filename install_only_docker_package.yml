@@ -10,7 +10,6 @@
       - ca-certificates
       - software-properties-common
       - python3-pip
-      - virtualenv
       - docker.io
       - python3-pip
 

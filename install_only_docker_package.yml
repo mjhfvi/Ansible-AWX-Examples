@@ -8,10 +8,10 @@
     state: installed
     update_cache: yes
     with_items:
-      - apt-transport-https
-      - ca-certificates
-      - software-properties-common
-      - python3-pip
-      - docker.io
-      - python3-pip
-      - python-setuptools
+       - apt-transport-https
+       - ca-certificates
+       - software-properties-common
+       - python3-pip
+       - docker.io
+       - python3-pip
+       - python-setuptools

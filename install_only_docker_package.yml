@@ -3,14 +3,14 @@
   hosts: all
   tasks:
   
-- name: Install all the packages
-  update_cache: yes
-  apt:
-    pkg:
-    - apt-transport-https
-    - ca-certificates
-    - python3-pip
-    - software-properties-common
-    - python3-pip
-    - docker.io
-    - python-setuptools
+  - name: Install all the packages
+    update_cache: yes
+    apt:
+      pkg:
+      - apt-transport-https
+      - ca-certificates
+      - python3-pip
+      - software-properties-common
+      - python3-pip
+      - docker.io
+      - python-setuptools

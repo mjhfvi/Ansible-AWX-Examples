@@ -1,0 +1,6 @@
+  - name: Install Docker Module for Python
+    pip:
+      name: 
+      - awscli
+      - docker
+      - setuptools

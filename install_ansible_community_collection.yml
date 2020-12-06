@@ -4,4 +4,6 @@
   tasks:
 
   - name: Install Community Collection run command
-    shell: ansible-galaxy collection install community.general
+    command: ansible-galaxy install {{ item.item }}
+    with_items:
+      - community.general

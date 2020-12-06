@@ -4,4 +4,4 @@
   tasks:
 
   - name: Install Community Collection run command
-    shell: ansible-galaxy --help
+    shell: mkdir /tmp/test

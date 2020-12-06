@@ -9,5 +9,5 @@ source: https://github.com/ansible/awx
 
 
 # Setup Templates
-images/2020-12-06_11-19-00.png
+![alt text](https://github.com/mjhfvi/awx-example/blob/main/images/2020-12-06_11-19-00.png)
 

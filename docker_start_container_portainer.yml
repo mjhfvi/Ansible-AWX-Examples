@@ -4,9 +4,4 @@
   tasks:
 
   - name: Create a portainer Container
-    community.general.docker_container:
-      name: portainer
-      image: portainer
-      state: present
-      ports:
-       - "8080:80"
+    shell: docker run -d -p 8080:80 portainer_server

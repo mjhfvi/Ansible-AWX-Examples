@@ -3,7 +3,9 @@
   hosts: all
   tasks:
 
-  - name: Install bottle for Python 3.3 specifically, using the 'pip3.3' executable
+  - name: Install docker adn aws tools python with pip3
     pip:
-      name: awscli
+      - awscli
+      - docker
+      - setuptools
       executable: pip3

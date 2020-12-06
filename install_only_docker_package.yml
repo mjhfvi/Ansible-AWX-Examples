@@ -5,7 +5,7 @@
   
 - name: Install all the packages
   update_cache: yes
-  apt: pkg={{ item }}
+  apt:
     pkg:
     - apt-transport-https
     - ca-certificates

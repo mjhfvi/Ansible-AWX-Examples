@@ -3,12 +3,7 @@
   hosts: all
   tasks:
   
-  - name: Download the 7zip installer
-    win_get_url:
-      url: https://www.7-zip.org/a/7z1900-x64.msi
-      dest: C:\ansible_msi_installers\7z1900-x64.msi
-
-  - name: Install 7zip MSI
-    win_package: 
-      path: C:\ansible_examples\7z1900-x64.msi
+  - name: Install git
+    win_chocolatey:
+      name: git
       state: present

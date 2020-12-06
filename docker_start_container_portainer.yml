@@ -1,0 +1,13 @@
+---
+- name: Playbook to pull an portainer Image For Docker
+  hosts: all
+  tasks:
+  
+  
+- name: Create a portainer Container
+  community.general.docker_container:
+    name: portainer
+    image: portainer
+    state: present
+    ports:
+     - "8080:80"

@@ -4,7 +4,6 @@
   tasks:
   
   - name: Install all the packages
-    update_cache: yes
     apt:
       pkg:
       - apt-transport-https

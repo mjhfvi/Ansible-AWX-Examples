@@ -3,13 +3,13 @@
   hosts: all
   tasks:
   
-- name: Install all the packages
-  apt: pkg={{ item }}
-  with_items:
-    - apt-transport-https
-    - ca-certificates
-    - python3-pip
-    - software-properties-common
-    - python3-pip
-    - docker.io
-    - python-setuptools
+  - name: Install all the packages
+    apt: pkg={{ item }}
+    with_items:
+      - apt-transport-https
+      - ca-certificates
+      - python3-pip
+      - software-properties-common
+      - python3-pip
+      - docker.io
+      - python-setuptools

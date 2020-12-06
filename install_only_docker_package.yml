@@ -3,8 +3,11 @@
   hosts: all
   tasks:
   
-  - name: Install a list of packages
-    apt:
+  - name: Install all the packages
+    apt: name={{ item }} 
+    state: installed
+    update_cache: yes
+    with_items:
     - apt-transport-https
     - ca-certificates
     - software-properties-common

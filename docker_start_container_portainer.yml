@@ -4,7 +4,7 @@
   tasks:
 
   - name: Create a portainer Container
-    shell: docker run -d -p 8000:80 --name portainer_server portainer/portainer
+    shell: docker run -d -p 8000:8000 --name portainer_server portainer/portainer
 
   - name: start a portainer Container
     shell: docker container start portainer_server

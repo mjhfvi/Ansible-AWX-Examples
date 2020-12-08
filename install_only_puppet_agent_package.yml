@@ -12,7 +12,7 @@
     
   - name: Installing The puppet5-release-wheezy.deb File
     apt:
-    deb: /tmp/puppet5-release-wheezy.deb
+      deb: /tmp/puppet5-release-wheezy.deb
 
   - name: Update apt and install puppet-agent
     apt: 

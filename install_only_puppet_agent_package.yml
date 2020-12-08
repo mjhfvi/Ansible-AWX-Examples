@@ -46,7 +46,6 @@
       name: puppet
       state: started
       enabled: yes
-       masked: no
 
   - name: Execute a command to Register Puppet Service
     become: true

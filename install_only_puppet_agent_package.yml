@@ -51,6 +51,10 @@
     become: true
     shell: sudo /opt/puppetlabs/bin/puppet resource service puppet ensure=running enable=true
     
+  - name: Wait for 10 seconds to the Puppet Service to be Ready
+    wait_for:
+    timeout: 10
+    
   - name: Execute a command to Register Puppet Agent to the Server
     become: true
     shell: sudo /opt/puppetlabs/bin/puppet agent -t

@@ -25,7 +25,7 @@
       path: /etc/puppetlabs/puppet/puppet.conf
       state: touch
 
-  - name: Update puppet.conf File
+  - name: Update hosts File
     lineinfile:
       path: /etc/hosts
       state: present

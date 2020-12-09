@@ -4,15 +4,15 @@
   become: true
   tasks:
 
-  - name: Download puppet-agent deb File
+  - name: Download puppet deb File
     get_url:
-      url: https://apt.puppetlabs.com/puppet5-release-wheezy.deb
+      url: https://apt.puppetlabs.com/puppet7-release-focal.deb
       dest: /tmp/
       mode: '0744'
     
-  - name: Installing The puppet5-release-wheezy.deb File
+  - name: Installing The puppet7-release-focal.deb File
     apt:
-      deb: /tmp/puppet5-release-wheezy.deb
+      deb: /tmp/puppet7-release-focal.deb
 
   - name: Update apt and install puppet-agent
     apt: 

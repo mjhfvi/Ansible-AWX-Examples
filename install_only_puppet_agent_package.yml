@@ -67,5 +67,6 @@
 
   - name: Execute a command to Register Puppet Agent to the Server
     become: true
-    shell: /opt/puppetlabs/bin/puppet agent -t
+    shell: 
+      cmd: /opt/puppetlabs/bin/puppet agent -t
     

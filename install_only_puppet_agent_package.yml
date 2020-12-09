@@ -29,7 +29,7 @@
     lineinfile:
       path: /etc/hosts
       state: present
-      line: '192.168.50.96 puppet'
+      line: '192.168.50.96 puppet puppet.localdomain'
       
   - name: Update puppet.conf File
     lineinfile:
@@ -38,7 +38,7 @@
       line: "{{ item }}"
     with_items:
     - '[main]'
-    - 'certname = node00'
+    - 'certname = ops03'
     - 'server = puppet'
     
   - name: Starting The puppet Agent Service

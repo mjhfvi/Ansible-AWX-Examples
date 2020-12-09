@@ -63,7 +63,7 @@
     become: true
     shell: /opt/puppetlabs/bin/puppet resource service puppet ensure=running enable=true
 
-  - pause: seconds=20
+  - pause: seconds=10
 
   - name: Execute a command to Register Puppet Agent to the Server
     become: true

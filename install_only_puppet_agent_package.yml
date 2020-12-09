@@ -8,14 +8,20 @@
     apt:
       deb: https://apt.puppetlabs.com/puppet7-release-focal.deb
     
+  - pause: seconds=10
+    
   - name: Update all Packages to Their Latest Version
     apt:
       name: "*"
       state: latest
 
+  - pause: seconds=10
+
   - name: Upgrade the OS (apt-get dist-upgrade)
     apt:
       upgrade: dist
+    
+  - pause: seconds=10
     
   - name: Update apt and Install puppet-agent
     apt: 

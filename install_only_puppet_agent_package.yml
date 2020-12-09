@@ -14,6 +14,10 @@
     apt:
       deb: /tmp/puppet7-release-focal.deb
 
+  - name: Wait for 10 seconds to the apt-get Service to be Ready
+    wait_for:
+      timeout: 10
+
   - name: Update apt and install puppet-agent
     apt: 
       update_cache: yes 

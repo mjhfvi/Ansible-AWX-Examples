@@ -50,3 +50,8 @@
   - name: Execute a command to Register Puppet Service
     become: true
     shell: sudo /opt/puppetlabs/bin/puppet resource service puppet ensure=running enable=true
+    
+  - name: Execute a command to Register Puppet Agent to the Server
+    become: true
+    shell: sudo /opt/puppetlabs/bin/puppet agent -t
+    

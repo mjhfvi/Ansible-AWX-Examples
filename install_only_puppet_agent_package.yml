@@ -4,9 +4,9 @@
   become: true
   tasks:
 
-- name: Install puppet .deb package from the internet
-  apt:
-    deb: https://apt.puppetlabs.com/puppet7-release-focal.deb
+  - name: Install puppet .deb package from the internet
+    apt:
+      deb: https://apt.puppetlabs.com/puppet7-release-focal.deb
     
   - pause: seconds=20
   

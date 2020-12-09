@@ -14,6 +14,14 @@
     apt:
       deb: /tmp/puppet7-release-focal.deb
 
+  - pause: seconds=20
+  
+  - name: Update apt and install puppet-agent
+    apt: 
+      update_cache: yes 
+      name: puppet-agent
+      state: latest
+
   - name: Create File puppet.conf
     file:
       path: /etc/puppetlabs/puppet/puppet.conf
@@ -24,14 +32,6 @@
       path: /etc/hosts
       state: present
       line: '192.168.50.96 puppet puppet.localdomain'
-
-  - pause: seconds=20
-
-  - name: Update apt and install puppet-agent
-    apt: 
-      update_cache: yes 
-      name: puppet-agent
-      state: latest
      
   - name: Update puppet.conf File
     lineinfile:

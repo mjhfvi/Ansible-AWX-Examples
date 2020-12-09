@@ -32,6 +32,15 @@
       path: /etc/hosts
       state: present
       line: '192.168.50.96 puppet puppet.localdomain'
+  
+  - name: Update hosts File
+    lineinfile:
+      path: /etc/hosts
+      state: present
+      line: "{{ item }}"
+    with_items:
+    - '192.168.50.96 puppet puppet.localdomain'
+    - '192.168.50.73 ops03 ops03.localdomain'
      
   - name: Update puppet.conf File
     lineinfile:

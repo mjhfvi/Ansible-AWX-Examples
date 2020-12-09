@@ -14,9 +14,9 @@
     apt:
       deb: /tmp/puppet7-release-focal.deb
 
-  - name: Wait for 10 seconds to the apt-get Service to be Ready
+  - name: Wait for 20 seconds to the apt-get Service to be Ready
     wait_for:
-      timeout: 10
+      timeout: 20
 
   - name: Update apt and install puppet-agent
     apt: 

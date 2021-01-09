@@ -1,1 +1,1 @@
-Image Folder forThis Project
+Image Folder for this Project
